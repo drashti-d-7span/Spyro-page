@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -14,9 +34,9 @@
       integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
     <title>spyrow</title>
   </head>
+
   <body>
     <div class="bg-hero">
       <nav class="md:py-4 px-4 py-10 lg:py-12 lg:px-8">
@@ -506,17 +526,17 @@
       </div>
     </section>
 
-    <section class="bg-orange-700 lg:py-12 lg:px-8">
+    <section class="bg-classes lg:py-12 lg:px-8">
       <div class="container px-5 m-auto">
         <h2
-          class="text-white text-2xl font-semibold text-center leading-6 pt-20"
+          class="text-white text-2xl font-semibold text-center leading-6 pt-12"
         >
           Client’s Feedback
         </h2>
         <div class="pt-8">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper lg:flex">
-              <div class="swiper-slide">
+          <div class="myslider">
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
                 <h3>
                   Al-Balad is essentially Jeddah old town. It was once
                   surrounded by a wall, but now only the gates re
@@ -533,13 +553,64 @@
                   <p class="">Courtney Henry</p>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="./Images/feedback-img-1.png" />
+                  <p class="">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="./Images/feedback-img-1.png" />
+                  <p class="">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                  <img class="pr-3 w-9" src="./Images/star-img.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="./Images/feedback-img-1.png" />
+                  <p class="">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -580,115 +651,17 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./scrip.js"></script>
   </body>
 </html>
-
-<!-- <div class="swiper mySwiper">
-  <div class="swiper-wrapper lg:flex">
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-1.png" />
-        <p class="">Courtney Henry</p>
-      </div>
-    </div>
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-2.png" />
-        <p class="">Brooklyn Simmons</p>
-      </div>
-    </div>
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-3.png" />
-        <p class="">Jane Cooper</p>
-      </div>
-    </div>
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-1.png" />
-        <p class="">Courtney Henry</p>
-      </div>
-    </div>
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-3.png" />
-        <p class="">Jane Cooper</p>
-      </div>
-    </div>
-    <div class="swiper-slide text-white bg-black py-12 px-10">
-      <h3>
-        Al-Balad is essentially Jeddah old town. It was once surrounded by a
-        wall, but now only the gates re
-      </h3>
-      <div class="flex pt-5">
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-        <img class="pr-3 w-9" src="./Images/star-img.svg" />
-      </div>
-      <div class="flex items-center text-center pt-14">
-        <img class="w-10" src="./Images/feedback-img-1.png" />
-        <p class="">Courtney Henry</p>
-      </div>
-    </div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div> -->

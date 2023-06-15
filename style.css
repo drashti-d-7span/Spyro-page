@@ -6,3 +6,13 @@
 body{
     font-family: outfit;
 }
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #FF4601 !important;
+}
+.slick-dots li button:before {
+    color: #FF620180 !important;
+}
+.slick-dots li button:before {
+    font-size: 11px !important;
+}
