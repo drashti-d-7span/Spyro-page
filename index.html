@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -412,16 +416,16 @@
       </div>
     </section>
 
-    <section class="bg-blackcolor pb-16 lg:py-12 lg:px-8">
+    <section class="bg-blackcolor pb-16 lg:py-6 lg:px-8">
       <div class="container px-5 m-auto">
         <h2
-          class="text-white text-2xl font-semibold text-center leading-6 pt-20"
+          class="text-white text-2xl font-semibold text-center leading-6 pt-20 lg:text-4xl"
         >
           Instructors
         </h2>
         <div class="md:flex md:gap-5 md:flex-wrap md:justify-center">
           <div class="lg:w-1/5">
-            <img class="pt-8 lg:pt-9" src="./Images/instructors-img-1.jpg" />
+            <img class="pt-8 lg:pt-10" src="./Images/instructors-img-1.jpg" />
             <h3
               class="text-lg text-center font-medium text-white color tracking-wider leading-6 pt-4 lg:text-2xl"
             >
@@ -550,7 +554,7 @@
                 </div>
                 <div class="flex items-center text-center pt-14">
                   <img class="w-10" src="./Images/feedback-img-1.png" />
-                  <p class="">Courtney Henry</p>
+                  <p class="pl-4">Courtney Henry</p>
                 </div>
               </div>
             </div>
@@ -569,7 +573,7 @@
                 </div>
                 <div class="flex items-center text-center pt-14">
                   <img class="w-10" src="./Images/feedback-img-1.png" />
-                  <p class="">Courtney Henry</p>
+                  <p class="pl-4">Courtney Henry</p>
                 </div>
               </div>
             </div>
@@ -588,7 +592,7 @@
                 </div>
                 <div class="flex items-center text-center pt-14">
                   <img class="w-10" src="./Images/feedback-img-1.png" />
-                  <p class="">Courtney Henry</p>
+                  <p class="pl-4">Courtney Henry</p>
                 </div>
               </div>
             </div>
@@ -607,7 +611,7 @@
                 </div>
                 <div class="flex items-center text-center pt-14">
                   <img class="w-10" src="./Images/feedback-img-1.png" />
-                  <p class="">Courtney Henry</p>
+                  <p class="pl-4">Courtney Henry</p>
                 </div>
               </div>
             </div>
@@ -616,10 +620,206 @@
       </div>
     </section>
 
+    <section class="bg-bgblack pt-12 pb-24 md:pt-20 md:pb-10 lg:pt-14 lg:mb-0">
+      <div class="container px-5 m-auto">
+        <h2
+          class="text-whitecolor font-semibold text-center text-xl md:text-3xl lg:text-4xl"
+        >
+          Frequently Asked Question
+        </h2>
+        <main class="p-10 bg-light-blue">
+          <div class="flex justify-center items-start my-2">
+            <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+              <ul class="flex flex-col">
+                <li class="my-2 shadow-lg" x-data="accordion(1)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >What are your focus areas as a UI/UX agency?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor opacity-30"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(2)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >How do I track my order?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor opacity-30"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(3)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >What’s your return policy?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor opacity-30"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(4)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >How do I make changes to an existing order?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor opacity-30"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <section class="bg-GradientColor pt-8 pb-6 md:pt-10 md:pb-8 lg:p-8">
+      <div class="container px-5 m-auto">
+        <div class="text-center lg:flex lg:gap-12">
+          <div class="lg:w-3/5 lg:text-left">
+            <h2
+              class="text-white text-2xl font-semibold md:text-3xl lg:text-4xl"
+            >
+              Are you ready to change?
+            </h2>
+            <p
+              class="text-white text-xs pt-2 font-normal md:text-sm md:pt-4 lg:text-base lg:pt-5"
+            >
+              Challenge your strength. Stretch your body. Breathe easy. Our team
+              of world-class instructors will empower
+            </p>
+          </div>
+          <div class="pt-6 md:pt-8 lg:w-2/5">
+            <button
+              class="border border-solid text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:text-base"
+            >
+              Start your Free Trial
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="bg-footer pb-6 lg:py-12 lg:px-8">
       <div class="container px-5 m-auto">
         <div class="text-center">
-          <img class="w-24 pt-12 m-auto" src="./Images/SPYRO logo.svg" />
+          <img
+            class="w-24 pt-12 m-auto lg:w-32"
+            src="./Images/SPYRO logo.svg"
+          />
           <p class="text-sm text-white font-medium pt-7 md:max-w-xl m-auto">
             Join us today and experience the transformative power of our fitness
             classes. Don't wait to start your fitness journey. Take the first

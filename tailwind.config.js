@@ -9,7 +9,8 @@ module.exports = {
         'whitecolor': 'rgba(255, 255, 255, 0.8);',
         'orange-400': '#FF4300',
         'orange-500': '#FF6400',
-        'blackcolor': '#18171A'
+        'blackcolor': '#18171A',
+        'bgblack':'#1E1E1E',
 
       },
 
