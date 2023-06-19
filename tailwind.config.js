@@ -23,7 +23,8 @@ module.exports = {
         'hero': "url('/Images/hero-bg-image.jpg')",
         'GradientColor': 'linear-gradient(90deg, #FF4300 -6.33%, #FF6400 103.92%)',
         'classes':"url('/Images/classes-bg-img.jpg')" ,
-        'footer': "url('/Images/footer-bg-img.jpg')" ,
+        'footer': "url('/Images/footer-bg-img.jpg')",
+        'strap':"linear-gradient(90deg, #FF4300 -6.33%, #FF6400 103.92%);"
       },
 
       
