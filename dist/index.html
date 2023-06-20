@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+      integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV"
+      crossorigin="anonymous"
+    />
+    <title>spyrow</title>
+    <script type="module" crossorigin src="/assets/index-e9e4fe68.js"></script>
+    <link rel="stylesheet" href="/assets/index-aed757f0.css">
+  </head>
+
+  <body>
+    <div class="bg-hero">
+      <!-- header start -->
+      <nav class="md:py-4 px-4 py-10 lg:py-12 lg:px-8">
+        <div class="md:hidden container px-4 mx-auto md:items-center">
+          <div class="flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-primarycolor">
+              <img src="/assets/SPYRO logo-40bd427f.svg" alt="logo" />
+            </a>
+            <button
+              class="border bg-white border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+              id="navbar-toggle"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="hidden md:flex flex-col md:flex-row mt-3 md:mt-0"
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Classes</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Team</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Gallery</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white text-center border border-solid border-primarycolor bg-primarycolor mt-1 md:mt-0 md:ml-1"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <div
+          class="hidden container px-4 mx-auto md:flex md:justify-between md:items-center"
+        >
+          <div class="flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-primarycolor">
+              <img src="/assets/SPYRO logo-40bd427f.svg" alt="logo" />
+            </a>
+            <button
+              class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+              id="navbar-toggle"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="hidden md:flex flex-col md:flex-row mt-3 md:mt-0"
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Classes</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Team</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="p-2 lg:px-4 md:mx-2 text-white hover:text-primarycolor"
+              >Gallery</a
+            >
+          </div>
+          <div>
+            <button>
+              <a
+                href="#"
+                class="p-2 lg:px-4 md:mx-2 text-white text-center border border-solid border-primarycolor bg-primarycolor mt-1 md:mt-0 md:ml-1"
+                >Contact Us</a
+              >
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- header end -->
+
+      <!-- hero section start -->
+      <section class="pb-12 md:pb-16 lg:pb-20 lg:py-12 lg:px-8">
+        <div class="container px-5 m-auto">
+          <h1
+            class="text-white leading-snug pt-16 text-4xl font-bold md:text-6xl md:max-w-md md:leading-snug md:pt-40 lg:pt-48"
+          >
+            <span class="stroke-red-500">Unleash</span> your Inner Athlete
+          </h1>
+          <p
+            class="text-white text-sm pt-6 md:max-w-md md:pt-7 lg:pt-9 lg:text-lg lg:max-w-lg"
+          >
+            Get ready to sweat it out and achieve your fitness goals with our
+            high-energy fitness classes! Our classes are designed to cater to
+            all fitness levels and provide a fun and motivating environment to
+            help you reach your peak performance.
+          </p>
+          <div class="pt-6">
+            <button
+              class="border bg-primarycolor border-solid border-primarycolor text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pl-6 lg:pr-6 lg:text-xl"
+            >
+              Start free trail
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+    </div>
+
+    <!--  lifestyle section start-->
+    <section class="text-center bg-black lg:py-12 lg:px-8">
+      <div class="container px-5 mx-auto relative">
+        <div
+          class="flex flex-col gap-y-8 items-end absolute -bottom-12 right-0 w-full"
+        >
+          <div class="bg-strap h-20 w-80 opacity-25"></div>
+          <div class="bg-strap h-20 w-2/3 opacity-25"></div>
+        </div>
+        <h2
+          class="font-semibold text-2xl text-white pt-20 md:text-4xl md:pt-32 lg:text-5xl lg:pt-24"
+        >
+          Fit for your lifestyle
+        </h2>
+        <p
+          class="font-normal text-white text-sm pt-7 md:text-lg md:pt-8 md:max-w-xl md:m-auto lg:text-xl lg:pt-9 lg:max-w-4xl lg:m-auto"
+        >
+          Wake up with a sunrise meditation, sweat it out with lunchtime HIIT,
+          or unwind with an evening flow. You’ll find movement for every mood
+          with classes sorted by time, style, and skill level.
+        </p>
+        <div class="pt-7 md:pt-9 lg:pt-10 relative">
+          <img class="mx-auto" src="/assets/lifestyle-image-cebbb934.png" />
+        </div>
+      </div>
+    </section>
+    <!--  lifestyle section end-->
+
+    <!-- instructors section start -->
+    <section class="bg-classes lg:py-12 lg:px-8">
+      <div class="container px-5 mx-auto">
+        <h2
+          class="text-center font-semibold text-2xl text-white pt-20 md:text-4xl md:pt-32 lg:text-5xl lg:pt-24"
+        >
+          Classes
+        </h2>
+
+        <div class="md:flex md:flex-wrap md:justify-between">
+          <div class="p-3 md:w-6/12 md:p-4 lg:w-4/12 lg:p-4">
+            <img
+              class="pt-4 md:pt-5 lg:pt-9"
+              src="/assets/classes-img-1-ab36751f.jpg"
+            />
+            <div class="flex text-center items-center justify-between pt-3">
+              <div class="flex text-center items-center">
+                <img src="/assets/classes-img-3a511a1d.svg" />
+                <p class="text-white ml-2 text-xs lg:text-base">Yoga</p>
+              </div>
+              <div class="flex text-center items-center">
+                <img class="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAMAAAACYceEAAAASFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////neHiwAAAAF3RSTlMAIBCAcEBgMO+QUAjfv3hoSDifWBjPKOU+GfcAAADxSURBVCjPbZBZjsMwDEOpxWtsZ2la3f+mM7GnHjTo+7EoQgRM/OPSkRy+cFgs0RI+IOeQLDEgv9buaMaIrGRHn5PxKvIXGmRbkC2Mc/NYnLy6yA2AN5oO0HIXmzDgbCT462XZuuCm+wulEAAqBeS0MYblRRFiUS8xBjTxJ94sC0DVzGro4g4T4ytMLtxW/dxVu6geM49zU3C1mLzLqVhlrJIZYG0boZpioFZxZlFGbgzkaQDa/9o2PK6dGCZscvkPkDxO6OhzNkdeArCrrByf9D55Flql7X0OAdmK771JjBlhnzWMbmKJvZ87pOlISlP/AL/5CgNOy32wAAAAAElFTkSuQmCC" />
+                <p class="text-white ml-2 text-xs lg:text-base">29 Students</p>
+              </div>
+            </div>
+            <div class="flex items-center text-center justify-between">
+              <h2
+                class="text-white text-lg font-semibold leading-9 tracking-wide pt-2 lg:text-2xl"
+              >
+                Strength & Sweat
+              </h2>
+              <div class="flex">
+                <img class="w-4" src="/assets/clock vector-6c4a7df6.svg" />
+                <span class="text-white pl-2">2 H</span>
+              </div>
+            </div>
+            <p class="text-white text-xs font-medium leading-7 lg:text-base">
+              Instructor: Esther Howard
+            </p>
+            <div class="flex pt-2">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pr-1 lg:text-base"
+              >
+                No. of Classes:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 lg:text-base"
+              >
+                30
+              </p>
+            </div>
+
+            <div class="flex pb-5">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pt-1 pr-1 lg:text-base"
+              >
+                Difficulty:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 pt-1 lg:text-base"
+              >
+                Beginner
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center text-center">
+              <button
+                class="border bg-primarycolor -skew-x-12 border-solid border-primarycolor text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pl-4 lg:pr-4 lg:text-base"
+              >
+                Learn more
+              </button>
+              <button
+                class="border border-solid text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pr-4 lg:pl-4 lg:text-base"
+              >
+                Start a free trail
+              </button>
+            </div>
+          </div>
+
+          <div class="p-3 md:w-6/12 md:p-4 lg:w-4/12 lg:p-4">
+            <img
+              class="pt-4 md:pt-5 lg:pt-9"
+              src="/assets/classes-img-2-46745e70.jpg"
+            />
+            <div class="flex text-center items-center justify-between pt-3">
+              <div class="flex text-center items-center">
+                <img src="/assets/classes-img-3a511a1d.svg" />
+                <p class="text-white ml-2 text-xs lg:text-base">Fitness</p>
+              </div>
+              <div class="flex text-center items-center">
+                <img class="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAMAAAACYceEAAAASFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////neHiwAAAAF3RSTlMAIBCAcEBgMO+QUAjfv3hoSDifWBjPKOU+GfcAAADxSURBVCjPbZBZjsMwDEOpxWtsZ2la3f+mM7GnHjTo+7EoQgRM/OPSkRy+cFgs0RI+IOeQLDEgv9buaMaIrGRHn5PxKvIXGmRbkC2Mc/NYnLy6yA2AN5oO0HIXmzDgbCT462XZuuCm+wulEAAqBeS0MYblRRFiUS8xBjTxJ94sC0DVzGro4g4T4ytMLtxW/dxVu6geM49zU3C1mLzLqVhlrJIZYG0boZpioFZxZlFGbgzkaQDa/9o2PK6dGCZscvkPkDxO6OhzNkdeArCrrByf9D55Flql7X0OAdmK771JjBlhnzWMbmKJvZ87pOlISlP/AL/5CgNOy32wAAAAAElFTkSuQmCC" />
+                <p class="text-white ml-2 text-xs lg:text-base">34 Students</p>
+              </div>
+            </div>
+            <div class="flex items-center text-center justify-between">
+              <h2
+                class="text-white text-lg font-semibold leading-9 tracking-wide pt-2 lg:text-2xl"
+              >
+                Total Body Burnout
+              </h2>
+              <div class="flex">
+                <img class="w-4" src="/assets/clock vector-6c4a7df6.svg" />
+                <span class="text-white pl-2">4 H</span>
+              </div>
+            </div>
+            <p class="text-white text-xs font-medium leading-7 lg:text-base">
+              Instructor: Wade Warren
+            </p>
+            <div class="flex pt-2">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pr-1 lg:text-base"
+              >
+                No. of Classes:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 lg:text-base"
+              >
+                45
+              </p>
+            </div>
+
+            <div class="flex pb-5">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pt-1 pr-1 lg:text-base"
+              >
+                Difficulty:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 pt-1 lg:text-base"
+              >
+                Medium
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center text-center">
+              <button
+                class="border bg-primarycolor border-solid -skew-x-12 border-primarycolor text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pr-4 lg:pl-4 lg:text-base"
+              >
+                Learn more
+              </button>
+              <button
+                class="border border-solid text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pr-4 lg:pl-4 lg:text-base"
+              >
+                Start a free trail
+              </button>
+            </div>
+          </div>
+
+          <div class="p-3 md:w-6/12 md:p-4 lg:w-4/12 lg:p-4">
+            <img
+              class="pt-4 md:pt-5 lg:pt-9"
+              src="/assets/classes-img-3-bd8fa145.jpg"
+            />
+            <div class="flex text-center items-center justify-between pt-3">
+              <div class="flex text-center items-center">
+                <img src="/assets/classes-img-3a511a1d.svg" />
+                <p class="text-white ml-2 text-xs lg:text-base">Yoga</p>
+              </div>
+              <div class="flex text-center items-center">
+                <img class="w-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAMAAAACYceEAAAASFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////neHiwAAAAF3RSTlMAIBCAcEBgMO+QUAjfv3hoSDifWBjPKOU+GfcAAADxSURBVCjPbZBZjsMwDEOpxWtsZ2la3f+mM7GnHjTo+7EoQgRM/OPSkRy+cFgs0RI+IOeQLDEgv9buaMaIrGRHn5PxKvIXGmRbkC2Mc/NYnLy6yA2AN5oO0HIXmzDgbCT462XZuuCm+wulEAAqBeS0MYblRRFiUS8xBjTxJ94sC0DVzGro4g4T4ytMLtxW/dxVu6geM49zU3C1mLzLqVhlrJIZYG0boZpioFZxZlFGbgzkaQDa/9o2PK6dGCZscvkPkDxO6OhzNkdeArCrrByf9D55Flql7X0OAdmK771JjBlhnzWMbmKJvZ87pOlISlP/AL/5CgNOy32wAAAAAElFTkSuQmCC" />
+                <p class="text-white ml-2 text-xs lg:text-base">60 Students</p>
+              </div>
+            </div>
+            <div class="flex items-center text-center justify-between">
+              <h2
+                class="text-white text-lg font-semibold leading-9 tracking-wide pt-2 lg:text-2xl"
+              >
+                Bootcamp Challenge
+              </h2>
+              <div class="flex">
+                <img class="w-4" src="/assets/clock vector-6c4a7df6.svg" />
+                <span class="text-white pl-2">3 H</span>
+              </div>
+            </div>
+            <p class="text-white text-xs font-medium leading-7 lg:text-base">
+              Instructor: Robert Fox
+            </p>
+            <div class="flex pt-2">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pr-1 lg:text-base"
+              >
+                No. of Classes:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 lg:text-base"
+              >
+                52
+              </p>
+            </div>
+
+            <div class="flex pb-5">
+              <img src="/assets/classes-img(2)-a70931c4.svg" />
+              <p
+                class="text-white pl-2 text-sm font-medium leading-5 pt-1 pr-1 lg:text-base"
+              >
+                Difficulty:
+              </p>
+              <p
+                class="pl-1 text-white text-sm font-medium leading-5 pt-1 lg:text-base"
+              >
+                Hard
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center text-center">
+              <button
+                class="border bg-primarycolor -skew-x-12 border-solid border-primarycolor text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pr-4 lg:pl-4 lg:text-base"
+              >
+                Learn more
+              </button>
+              <button
+                class="border border-solid text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:pr-4 lg:pl-4 lg:text-base"
+              >
+                Start a free trail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pt-10 pb-10 text-center md:pb-8 lg:pt-12 lg:pb-12">
+          <button
+            class="border bg-primarycolor border-solid border-primarycolor text-white pb-2 pl-10 pr-10 pt-2 pb-md:pl-6 md:text-base md:pl-16 md:pr-16 md:pt-3 md:pb-3 lg:text-base lg:pr-12 lg:pl-12 lg:pt-2 lg:pb-2"
+          >
+            See all
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- classes section end -->
+
+    <!-- instructors section start-->
+    <section class="bg-blackcolor pb-16 lg:py-6 lg:px-8 relative lg:pb-12">
+      <div class="container px-5 mx-auto">
+        <div
+          class="flex flex-col gap-y-8 items-start absolute bottom-20 right-0 w-full"
+        >
+          <div class="bg-strap h-20 w-80 opacity-25"></div>
+          <div class="bg-strap h-20 w-2/3 opacity-25"></div>
+        </div>
+        <h2
+          class="text-white text-2xl font-semibold text-center leading-6 pt-20 md:pb-8 lg:text-4xl lg:pb-10"
+        >
+          Instructors
+        </h2>
+        <div class="gap-6 md:flex md:justify-between relative">
+          <div class="lg:w-3/12">
+            <img
+              class="hover:border hover:border-primarycolor"
+              src="/assets/instructors-img-1-ec19f534.jpg"
+            />
+            <h3
+              class="text-lg text-center font-medium text-white color tracking-wider leading-6 pt-4 lg:text-2xl"
+            >
+              Jacob Jones
+            </h3>
+            <p
+              class="text-xs text-white text-center font-normal tracking-wide pt-1 lg:text-base"
+            >
+              Gym trainer
+            </p>
+          </div>
+
+          <div class="lg:w-3/12">
+            <img
+              class="hover:border hover:border-primarycolor"
+              src="/assets/instructors-img-2-03959600.jpg"
+            />
+            <h3
+              class="text-lg text-center font-medium text-white color tracking-wider leading-6 pt-4 lg:text-2xl"
+            >
+              Leslie Alexander
+            </h3>
+            <p
+              class="text-xs text-white text-center font-normal tracking-wide pt-1 lg:text-base"
+            >
+              Gym trainer
+            </p>
+          </div>
+
+          <div class="lg:w-3/12">
+            <img
+              class="hover:border hover:border-primarycolor"
+              src="/assets/instructors-img-3-ebade3b8.jpg"
+            />
+            <h3
+              class="text-lg text-center font-medium text-white color tracking-wider leading-6 pt-4 lg:text-2xl"
+            >
+              Cameron Williamson
+            </h3>
+            <p
+              class="text-xs text-white text-center font-normal tracking-wide pt-1 lg:text-base"
+            >
+              Gym trainer
+            </p>
+          </div>
+
+          <div class="lg:w-3/12">
+            <img
+              class="hover:border hover:border-primarycolor"
+              src="/assets/instructors-img-4-91618553.jpg"
+            />
+            <h3
+              class="text-lg text-center font-medium text-white color tracking-wider leading-6 pt-4 lg:text-2xl"
+            >
+              Jane Cooper
+            </h3>
+            <p
+              class="text-xs text-white text-center font-normal tracking-wide pt-1 lg:text-base"
+            >
+              Gym trainer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- instructors section end -->
+
+    <!-- download section start -->
+    <section class="bg-GradientColor pt-10 lg:py-6 lg:px-6">
+      <div class="container px-5 mx-auto">
+        <div class="lg:flex lg:px-16 lg:gap-10">
+          <div class="lg:pt-20 lg:w-6/12">
+            <h2
+              class="text-white text-xl font-semibold tracking-wider md:text-4xl"
+            >
+              Download the most loved fitness app
+            </h2>
+            <p
+              class="text-white tracking-wider text-xs font-semibold pt-5 md:text-lg"
+            >
+              Start your fitness journey with us. Join the cult!
+            </p>
+            <div class="flex pt-12">
+              <img
+                class="w-2/4 md:w-1/4 lg:w-2/5"
+                src="data:image/png;base64,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"
+              />
+              <img
+                class="w-2/4 pl-3 md:w-1/4 lg:w-2/5"
+                src="data:image/png;base64,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"
+              />
+            </div>
+          </div>
+          <div class="pt-12 lg:pt-0 lg:w-6/12">
+            <img
+              class="md:mx-auto md:w-2/4 lg:w-full"
+              src="/assets/download-img-dc00f588.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- download section end -->
+
+    <!-- video section start -->
+    <section class="bg-black lg:py-12 lg:px-8">
+      <div class="container px-5 mx-auto">
+        <div class="relative w-full">
+          <video
+            src="/assets/Untitled-590e31fb.mp4"
+            controls
+            class="w-full h-96"
+          ></video>
+        </div>
+      </div>
+    </section>
+    <!-- video section end -->
+
+    <!-- feedback section start -->
+    <section class="bg-classes lg:py-12 lg:px-8">
+      <div class="container px-5 mx-auto">
+        <h2
+          class="text-white text-2xl font-semibold text-center leading-6 pt-12"
+        >
+          Client’s Feedback
+        </h2>
+        <div class="pt-8">
+          <div class="myslider">
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="/assets/feedback-img-1-22a1b54d.png" />
+                  <p class="pl-4">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="/assets/feedback-img-1-22a1b54d.png" />
+                  <p class="pl-4">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="/assets/feedback-img-1-22a1b54d.png" />
+                  <p class="pl-4">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black text-white w-80 h-96">
+              <div class="py-6 px-8 lg:pt-10 lg:pb-8 lg:pl-10 lg:pr-14">
+                <h3>
+                  Al-Balad is essentially Jeddah old town. It was once
+                  surrounded by a wall, but now only the gates re
+                </h3>
+                <div class="flex pt-5">
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                  <img class="pr-3 w-9" src="/assets/star-img-c20642ba.svg" />
+                </div>
+                <div class="flex items-center text-center pt-14">
+                  <img class="w-10" src="/assets/feedback-img-1-22a1b54d.png" />
+                  <p class="pl-4">Courtney Henry</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feedback section end -->
+
+    <!-- FAQ section start -->
+    <section class="bg-bgblack pt-12 pb-24 md:pt-20 md:pb-10 lg:pt-14 lg:mb-0">
+      <div class="container px-5 mx-auto">
+        <h2
+          class="text-whitecolor font-semibold text-center text-xl md:text-3xl lg:text-4xl"
+        >
+          Frequently Asked Question
+        </h2>
+        <main class="p-10 bg-light-blue">
+          <div class="flex justify-center items-start my-2">
+            <div class="w-full sm:w-10/12 md:w-full my-1">
+              <ul class="flex flex-col">
+                <li class="my-2 shadow-lg" x-data="accordion(1)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >What are your focus areas as a UI/UX agency?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor -skew-x-12"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(2)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >How do I track my order?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor -skew-x-12"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(3)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >What’s your return policy?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor -skew-x-12"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+                <li class="my-2 shadow-lg" x-data="accordion(4)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span class="text-whitecolor lg:text-xl"
+                      >How do I make changes to an existing order?</span
+                    >
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-whitecolor h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                      ></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="overflow-hidden max-h-0 duration-500 transition-all bg-GradientColor -skew-x-12"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-white lg:text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop
+                    </p>
+                  </div>
+                  <div class="border border-whitecolor lg:mt-4 lg:mb-10"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- FAQ section end -->
+
+    <!-- change section start -->
+    <section class="bg-bgblack pt-8 pb-6 md:pt-10 md:pb-8 lg:p-8">
+      <div class="container px-12 mx-auto">
+        <div class="bg-GradientColor p-8 -skew-x-12">
+          <div class="text-center lg:flex lg:gap-12">
+            <div class="lg:w-3/5 lg:text-left">
+              <h2
+                class="text-white text-2xl font-semibold md:text-3xl lg:text-4xl"
+              >
+                Are you ready to change?
+              </h2>
+              <p
+                class="text-white text-xs pt-2 font-normal md:text-sm md:pt-4 lg:text-base lg:pt-5"
+              >
+                Challenge your strength. Stretch your body. Breathe easy. Our
+                team of world-class instructors will empower
+              </p>
+            </div>
+            <div class="pt-6 md:pt-8 lg:w-2/5">
+              <button
+                class="border border-solid text-white pt-2 pb-2 pl-4 pr-4 text-sm md:pl-6 md:pr-6 md:text-base lg:text-base"
+              >
+                Start your Free Trial
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- change section end -->
+
+    <!-- footer start -->
+    <footer class="bg-footer pb-6 lg:py-12 lg:px-8">
+      <div class="container px-5 mx-auto">
+        <div class="text-center">
+          <img
+            class="w-24 pt-12 m-auto lg:w-32"
+            src="/assets/SPYRO logo-40bd427f.svg"
+          />
+          <p class="text-sm text-white font-medium pt-7 md:max-w-xl m-auto">
+            Join us today and experience the transformative power of our fitness
+            classes. Don't wait to start your fitness journey. Take the first
+            step towards a healthier, stronger you. Let's sweat, have fun, and
+            make fitness a way of life together!
+          </p>
+          <div class="pt-8 pb-11">
+            <a class="pr-6"
+              ><i class="fa-brands fa-facebook-f" style="color: #9e9e9e"></i
+            ></a>
+            <a class="pr-6"
+              ><i class="fa-brands fa-twitter" style="color: #9e9e9e"></i
+            ></a>
+            <a class="pr-6"
+              ><i class="fa-brands fa-instagram" style="color: #9e9e9e"></i
+            ></a>
+            <a><i class="fa-brands fa-tiktok" style="color: #9e9e9e"></i></a>
+          </div>
+          <div class="border border-gray-300 md:m-auto lg:m-autogit"></div>
+          <div class="flex text-center justify-center">
+            <img class="pt-5 w-3 md:w-4" src="/assets/footer-vector-de14d2b1.svg" />
+            <p class="text-white pt-5 text-xs pl-1 md:text-sm">
+              SPYRO 2023. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+  </body>
+</html>
