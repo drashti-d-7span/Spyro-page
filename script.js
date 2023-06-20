@@ -51,6 +51,7 @@ $('.myslider').slick({
 
 
 
+// FAQ
 document.addEventListener('alpine:init', () => {
   Alpine.store('accordion', {
     tab: 0
@@ -72,3 +73,4 @@ document.addEventListener('alpine:init', () => {
     }
   }));
 })
+// FAQ end
